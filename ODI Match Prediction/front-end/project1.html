@@ -1,0 +1,47 @@
+<html>
+<title>  FIRST PAGE  </title>
+<head>
+    <style>
+        div{
+            margin-top: 200px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+   <!-- <div style="font-size:100px"><b><center>ODI MATCH </center></b></div>-->
+    <div class="textANI two" style=" font-size:100px; margin-left: 450px; color:black">
+		<b><span>O</span><span>D</span><span>I</span> &nbsp;
+            <span>M</span><span>A</span><span>T</span><span>C</span><span>H</span></b>
+      
+<!--        <a class="repeat" href="javascript:void(0);">Repeat Animation</a></b>-->
+		</div>
+    <style>
+body {
+    background-image: url('grd.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: 100% 100%;
+}
+</style>
+    <a href="project2.html"><centre>
+        <input type="button" value="WINNING PREDICTION"  style="font-size: 20px;height: 50px; top: 65%; left: 5% ; position: fixed"/></centre></a>
+  <!--  <a href="proj3.html"><input type="button" value="BATSMAN STATISTICS"  style="font-size: 20px; height: 50px;top: 65%; right: 5%; position: fixed"/></a>-->
+    </body>
+    <script type="text/javascript">
+        // Code By Webdevtrick ( https://webdevtrick.com )
+        // Only for repeat
+        $(function(){
+            $('.repeat').click(function(){
+                var classes =  $(this).parent().attr('class');
+                $(this).parent().attr('class', 'textANI');
+                var indicator = $(this);
+                setTimeout(function(){ 
+                    $(indicator).parent().addClass(classes);
+                }, 20);
+            });
+        });
+    </script>
+</html>

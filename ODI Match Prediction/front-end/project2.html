@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title> SECOND PAGE</title>
+     <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <style>
+        body {
+                background-image: url('10.jpg');
+	            background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+}
+    </style>
+    
+ <!--   <div style="font-size:80px"><i><center>SELECT TEAMS </center></i></div>-->
+     <div class="textANI one" style=" font-size:100px; margin-left: 400px; color:black">
+		<span>S</span><span>E</span><span>L</span><span>E</span><span>C</span><span>T</span> &nbsp;
+		<span>T</span><span>E</span><span>A</span><span>M</span><span>S</span>
+    </div>
+    
+    <div style="text-align: center; margin-top: 130px;  top: 40%; color:darkblue; font-size: 30px;height: 60px;">
+    TEAM 1 : <select style="top: 30%; size=45; height:35px ;width: 250px">
+        <option>--Select--</option>
+        <option>England</option>	
+        <option>India</option>
+        <option>New Zealand</option>
+        <option>Australia</option>
+        <option>South Africa</option>
+        <option>Pakistan</option>
+        <option>Bangladesh</option>
+        <option>Sri Lanka</option>
+        <option>West Indies</option>
+            <br>
+        </select>
+    TEAM 2 : <select style="top: 30%; size=45; height:35px ;width: 250px">
+    <option>--Select--</option>
+        <option>England</option>	
+        <option>India</option>
+        <option>New Zealand</option>
+        <option>Australia</option>
+        <option>South Africa</option>
+        <option>Pakistan</option>
+        <option>Bangladesh</option>
+        <option>Sri Lanka</option>
+        <option>West Indies</option>
+       
+            <br>
+    </select></div>
+    <p style="text-align: centre; margin-top: 80px; margin-left: 40%; font-size: 30px;height: 60px; color:darkblue;">GROUND: <input type="text" placeholder="Enter ground" size="35" style="height:35px "><br>
+    </p>
+    <a style="position: fixed; left: 60%"><centre><input type="button" value="SUBMIT"  style="font-size: 20px; height: 50px; top: 90%; position: fixed"/></centre></a>
+     <a href="project1.html" style="position: fixed; left: 40%"><centre><input type="button" value="GOTO"  style="font-size: 20px; height: 50px; top: 90%; position: fixed"/></centre></a>
+<!--
+<!--
+    <a href="project3.html" style="position: fixed; left: 50%"><input type="button" value="SUBMIT"  style="font-size: 20px; height: 50px; top: 90%; position: fixed"/></a>
+    
+-->
+    </body>
+           <script type="text/javascript">
+        // Code By Webdevtrick ( https://webdevtrick.com )
+        // Only for repeat
+        $(function(){
+            $('.repeat').click(function(){
+                var classes =  $(this).parent().attr('class');
+                $(this).parent().attr('class', 'textANI');
+                var indicator = $(this);
+                setTimeout(function(){ 
+                    $(indicator).parent().addClass(classes);
+                }, 20);
+            });
+        });
+    </script>
+</html>

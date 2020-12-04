@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title> THIRD PAGE</title>
+    <style>
+     div{
+            margin-top: 50px;
+        }
+    </style>
+     <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <style>
+        body {
+                background-image: url('sachin.jpg');
+	            background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+}
+    </style>
+    
+     <div class="textANI four" style=" font-size:100px; margin-left: 550px; color:black">
+         <span>R</span><span>E</span><span>S</span><span>U</span><span>L</span><span>T</span>&nbsp;
+	<!--	<span>S</span><span>T</span><span>A</span><span>T</span><span>I</span><span>S</span><span>T</span>
+<span>I</span><span>C</span><span>S</span>-->
+    </div>
+    
+<!--    <div style="font-size:90px; color: cyan"><center> PLAYERS STATISTICS </center></div>
+    
+    <!--<div style="text-align: center; margin-top: 80px;  top: 40%; color:darkblue; font-size: 30px;height: 60px;">-->
+   <!-- <p style="text-align: centre; margin-top: 100px; top: 50%; margin-left: 25%; font-size: 40px;height: 60px; color:black;"><b>TEAM NAME  :   <input type="text" placeholder="Enter team name" size="35" style="height:35px "></b><br>
+    </p>
+    <p style="text-align: centre; margin-top: 50px; top: 50%; margin-left: 26%; font-size: 40px;height: 60px; color:black;"><b>PLAYERS ID  :   <input type="text" placeholder="Enter players id" size="35" style="height:35px "></b><br>
+    </p>
+    <a style="position: fixed; left: 50%"><centre><input type="button" value=" SUBMIT "  style="font-size: 20px; height: 50px; top: 90%; position: fixed"/></centre></a>-->
+    <a href="project1.html" style="position: fixed; left: 40%"><centre><input type="button" value=" GOTO "  style="font-size: 20px; height: 50px; top: 90%; position: fixed"/></centre></a>
+           <script type="text/javascript">
+        // Code By Webdevtrick ( https://webdevtrick.com )
+        // Only for repeat
+        $(function(){
+            $('.repeat').click(function(){
+                var classes =  $(this).parent().attr('class');
+                $(this).parent().attr('class', 'textANI');
+                var indicator = $(this);
+                setTimeout(function(){ 
+                    $(indicator).parent().addClass(classes);
+                }, 20);
+            });
+        });
+    </script>
+    </body>
+</html>
