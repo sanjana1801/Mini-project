@@ -34,14 +34,10 @@ def showporder():
                   if s['Customer_id']== w:
                #           print s
                           print "\t\t",s['Customer_id'],"\t\t",s['Customer_name'],"\t\t",s['Order_no'],"\t\t",s['Order_cost'],"\t\t"
-
-
+			  
 def updateorder():
  
 	    w= input("Enter order no to be updated to delivered: ")
-	    
-      
-      
             z=db.food.update_one({"Order_no":w},{"$set":{"Status_of_delivery":"Delivered"}})
             print(z,"updated in record")
 
@@ -49,11 +45,7 @@ def deleteorder():
 	oid = input("Enter order id to be deleted: ")
 	z=db.food.remove({"Order_no":oid})
 	print(z,"order deleted")
-           
-
-
-
-
+	
 def main():
       ans=0
       ch=0
